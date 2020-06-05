@@ -1,0 +1,146 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  padding-left: 15%;
+  padding-right: 15%;
+  
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 0px 0px;
+  cursor: pointer;
+  width: 100%;
+  height: 25px;
+}
+.button_all{
+	background-color: white;
+	color:black;
+	text-align:center;
+	display:inline-block;
+	cursor: pointer;
+	font-size: 20px;
+	width: 100%;
+	height: 25px;
+	margin: 0px 0px;
+	text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+a:hover {
+  background-color: white;
+  color:black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shopbox {
+  height: 80px;
+  position: relative;
+
+}
+</style>
+
+
+
+<div style="text-align:center">
+  <h2>EXPLORE CATEGORIES</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://cdn.shopify.com/s/files/1/0402/7724/6104/files/revo_luggage_for_revo_website.jpg?v=1591391885" alt="luggage" style="width:100%">
+  <a href="https://revonew.myshopify.com/collections/frontpage" class="button">SHOP</a> 
+  </div>
+  <div class="column">
+     <img src="https://cdn.shopify.com/s/files/1/0402/7724/6104/files/revo_backpack_group_image_for_revo_website.jpg?v=1591392042" alt="luggage" style="width:100%">
+      <a href="/collections/frontpage" class="button">SHOP</a> 
+  </div>
+  <div class="column">
+    <img src="https://cdn.shopify.com/s/files/1/0402/7724/6104/files/revo_duffle_group_image_for_revo_website.jpg?v=1591391885" alt="luggage" style="width:100%">
+   <a href="#" class="button">SHOP</a> 
+  </div>
+  <div class="column">
+   <img src="https://cdn.shopify.com/s/files/1/0402/7724/6104/files/packing_cube_for_revo_website.jpg?v=1591391442" alt="luggage" style="width:100%">
+    <a href="#" class="button">SHOP</a> 
+  </div>
+</div>  
+
+<div class="shopbox">
+ <a href="collections/all" class="button_all">SHOP All</a> 
+</div>
+
